@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from 'axios';
 import md5 from 'md5';
-const API_URL = 'https://api.valantis.store:41000/';
-const PASSWORD = 'Valantis';
+
+const VALANTIS_URL = import.meta.env.VITE_VALANTIS_URL || '';
+const PASSWORD = import.meta.env.VITE_PASSWORD || '';
 
 export const callAPI = async (action: string, params: any) => {
     const timestamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
@@ -10,7 +11,7 @@ export const callAPI = async (action: string, params: any) => {
 
     try {
         const response = await axios.post(
-            API_URL,
+            VALANTIS_URL,
             {
                 action,
                 params

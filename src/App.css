@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.hero {
+    margin: 0px 0px 50px 0px;
+    padding: 20px 20px 20px 20px;
+    border: #8a8a8a solid 1px;
+    border-radius: 15px;
+}
+
 .product {
     margin: 0px 0px 30px 0px;
     padding: 10px 10px 1px 10px;
@@ -19,4 +26,12 @@
 .id{
     color:#8a8a8a;
     font-size: 10px;
+}
+
+button {
+    margin: 0px 5px 0px 0px;
+}
+
+input {
+    margin: 0px 15px 0px 0px;
 }
